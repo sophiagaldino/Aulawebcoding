@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: aqua;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        footer{
+            background-color: aqua;
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+</html>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Seção principal</h1>
+        <p>bem vindo a seção principal do site.</p>
+    </header>
+    <section>
+        <header>
+            <h2>Subseção</h2>
+        </header>
+        <p>Contéudo da Subseção</p>
+    </section>
+
+
+    <section id="home">
+        <h2>Página inicial</h2>
+        <p>Bem-Vindo á pagina inicial do meu website.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Informações sobre meu website.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <p>Os serviços que ofereço</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo</p>
+    </section>
+<!--audio e video-->
+        <h1>Exemplo de Vídeo em HTML</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Fpn1imb9qZg?si=Xkv7F2EVu2PWKf2c" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-ori
+        gin" allowfullscreen></iframe>
+        <video width="600" controls><!--adiciona controles nativos ao navegador-->
+            <source src="video.mp4" type="video.mp4">
+            Seu navegador não suporta a tag de video
+        </video>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Seu navegador não suporta a tag de áudio
+        </audio>
+    <form>
+        <label>Nome:</label>
+        <input type="text"><br></br>
+        <!-- comentario-->
+        
+    <label>Numero:</label>
+        <input type="text" pattern="\d{11}" title="O numero precisa ter 11 digitos"><br></br>
+        
+    <label>Email:</label>
+    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9._%+-]">
+
+    <label for="password">Senha:</label>
+    <input type="password"><br></br>
+    
+<div>
+    <label>Data de nascimento:</label>
+    <input type="date" id="data" name="data" required><br></br>
+</div>
+
+    <label>Mensagem:</label>
+        <textarea name="Mensagem" id="Mensagem" cols="50" rows="4">Sua mensagem</textarea><br>
+        <input type="submit" value="Confirmar"><br>
+
+        <label>Escolha uma fruta:</label>
+        <select name="fruit">
+            <!--Agrupando as frutas cítricas-->
+            <optgroup label="frutas citricas">
+                <option value="limao">Limão</option>
+                <option value="laranja">Laranja</option>
+                <option value="tangerina">Tangerina</option>
+            </optgroup>
+            <!--Agrupando as frutas doces-->
+            <optgroup label="frutas Doces">
+            <option value="maça">Maçã</option>
+            <option value="banana">Banana</option>
+            <option value="morango">Morango</option>
+        </optgroup>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Maria</td>
+                    <td>28</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>João</td>
+                    <td>35</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ana</td>
+                    <td>22</td>
+                    <td>Belo horizonte</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+    <footer>
+        <p>&copy; 2024 Meu site. Todos os direitos reservados</p>
+        <ul>
+            <li><a href="#privacy">Política de privacidade</a></li>
+            <li><a href="#terms">Termos de serviços</a></li>
+        </ul>
+    </footer>
+</body>
